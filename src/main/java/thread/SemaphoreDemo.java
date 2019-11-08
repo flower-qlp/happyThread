@@ -3,7 +3,7 @@ package thread;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.ThreadPoolExecutor;
 
-import static thread.threadPool.ThreadPool.newThreadPool;
+import static thread.threadpool.ThreadPool.newThreadPool;
 
 /**
  * @author happy

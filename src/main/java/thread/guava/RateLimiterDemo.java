@@ -1,4 +1,4 @@
-package thread;
+package thread.guava;
 
 import com.google.common.util.concurrent.RateLimiter;
 

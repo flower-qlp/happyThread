@@ -10,8 +10,12 @@ CyclicBarrier                     循环栅栏 类似countDownLatch 但是可以
 LockSupport                       阻塞线程工具,线程内部任意位置使用
 
 -------------------------------------------------------------------------------------
-RateLimiter                       使用限流算法中令牌算法
+RateLimiter                       使用限流算法中令牌算法Guava
+DirectExecutorDemo                是Guava中对线程的补充
 
 ----------------------------------------------------------------------------
 ThreadPool                        手动建线程池
 ThreadPoolReject                  线程池拒绝策略
+ThreadFactoryDemo                 自定义线程创建(复写ThreadFactory)
+ThreadPoolExt                     线程池的扩展(复写线程池的方法)
+RecursiveTaskDemo                 fork/join分而治之框架

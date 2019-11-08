@@ -1,4 +1,4 @@
-package thread.threadPool;
+package thread.threadpool;
 
 import java.util.concurrent.*;
 
@@ -9,7 +9,7 @@ import java.util.concurrent.*;
  **/
 public class ThreadPoolReject {
 
-    public static class myTask implements Runnable {
+    public static class MyTask implements Runnable {
 
         @Override
         public void run() {
@@ -23,7 +23,7 @@ public class ThreadPoolReject {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        myTask myTask = new myTask();
+        MyTask myTask = new MyTask();
         ExecutorService ex = new ThreadPoolExecutor(5, 5,
                 0L, TimeUnit.MICROSECONDS,
                 new LinkedBlockingDeque<>(10),
