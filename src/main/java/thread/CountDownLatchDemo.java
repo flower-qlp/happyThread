@@ -3,7 +3,7 @@ package thread;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ThreadPoolExecutor;
 
-import static thread.ThreadPool.newThreadPool;
+import static thread.threadPool.ThreadPool.newThreadPool;
 
 /**
  * @author happy

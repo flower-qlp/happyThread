@@ -4,7 +4,14 @@ ReentrantLockDemo1                重入锁死锁,响应中断
 ReentrantLockDemo2                重入锁---等待锁 tryLock(5,TimeUnit.SECONDS)等待几秒,避免死锁
 ReentrantLockDemo3                重入锁---tryLock() 避免死锁
 ConditionDemo                     重入锁的唤醒与等待
-ThreadPool                        手动建线程池
 ReadAndWriteLockDemo              读写锁 读取不独占资源,写独占资源
 CountDownLatchDemo                计数器--》等到规定的线程完成，主线程才可以执行
 CyclicBarrier                     循环栅栏 类似countDownLatch 但是可以循环计数
+LockSupport                       阻塞线程工具,线程内部任意位置使用
+
+-------------------------------------------------------------------------------------
+RateLimiter                       使用限流算法中令牌算法
+
+----------------------------------------------------------------------------
+ThreadPool                        手动建线程池
+ThreadPoolReject                  线程池拒绝策略

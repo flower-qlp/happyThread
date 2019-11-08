@@ -78,6 +78,11 @@ public class CyclicBarrierDemo {
             System.out.println("士兵" + i + "报道！");
             allSoldier[i] = new Thread(new Soldier(cyclicBarrier, "士兵" + i));
             allSoldier[i].start();
+//            会抛出一个线程中断异常InterruptedException以及9个BrokenBarrierException
+//            中断是当前中断线程抛出,9个是其他线程无法等到10个线程完成抛出的,防止线程无线等待
+            if (i == 5) {
+                allSoldier[i].interrupt();
+            }
         }
     }
 
