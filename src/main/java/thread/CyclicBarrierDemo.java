@@ -80,9 +80,9 @@ public class CyclicBarrierDemo {
             allSoldier[i].start();
 //            会抛出一个线程中断异常InterruptedException以及9个BrokenBarrierException
 //            中断是当前中断线程抛出,9个是其他线程无法等到10个线程完成抛出的,防止线程无线等待
-            if (i == 5) {
-                allSoldier[i].interrupt();
-            }
+//            if (i == 5) {
+//                allSoldier[i].interrupt();
+//            }
         }
     }
 

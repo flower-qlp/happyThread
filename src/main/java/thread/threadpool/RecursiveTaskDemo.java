@@ -65,8 +65,13 @@ public class RecursiveTaskDemo extends RecursiveTask<Long> {
 //        新建线程池
 //        新建线程对象
 //        运行线程对象
+
         ForkJoinPool forkJoinPool = new ForkJoinPool();
         RecursiveTaskDemo taskDemo = new RecursiveTaskDemo(0, 100);
+        /**
+         * submit 提交 会吃掉异常  可以用execute()提交
+         * 或者future 获取提交结果
+         * **/
         ForkJoinTask<Long> result = forkJoinPool.submit(taskDemo);
         try {
             long res = result.get();

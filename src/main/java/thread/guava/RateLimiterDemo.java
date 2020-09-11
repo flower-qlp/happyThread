@@ -26,6 +26,7 @@ public class RateLimiterDemo {
     public static void main(String[] args) {
         /**运行结果:每秒执行俩个线程**/
         for (int i = 0; i < 50; i++) {
+            //请求等待 完成 阻塞
             limiter.acquire();
 //            阻塞的线程请求丢弃,由于for循环的效率很高,除了第一个,其他的都被丢弃了
 //            if(!limiter.tryAcquire()){
