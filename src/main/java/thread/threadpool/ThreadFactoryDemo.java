@@ -25,7 +25,7 @@ public class ThreadFactoryDemo {
                 });
 
 //        submit()和excute都可以,但是excute()不会返回结果,
-//        如果需要抛出异常,捕获异常,则需要使用execute()
+//        如果需要抛出异常,捕获异常,则需要使用submit()
         for (int i = 0; i < 30; i++) {
             //es.execute(myTask);
             es.submit(myTask);
